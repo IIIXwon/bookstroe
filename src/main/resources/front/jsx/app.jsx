@@ -9,7 +9,7 @@ const {
     IndexLink
 } = require('react-router')
 
-// const Modal = require('./modal.jsx')
+const Modal = require('./modal.jsx')
 const Cart = require('./cart.jsx')
 // const Checkout = require('./checkout.jsx')
 // const Product = require('./product.jsx')
@@ -43,7 +43,7 @@ const Copy = () => {
 
 class App extends React.Component {
     componentWillReceiveProps(nextProps, nextContext) {
-        this.isModal = (nextProps.loaction.state && nextProps.location.state.modal)
+        this.isModal = (nextProps.location.state && nextProps.location.state.modal)
         if (this.isModal && nextProps.location.key !== this.props.location.key) {
             this.previousChidren = this.props.children
         }
