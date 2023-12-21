@@ -17,3 +17,4 @@ out/
 ### react ###
 node_modules/
 images/
+*.map
