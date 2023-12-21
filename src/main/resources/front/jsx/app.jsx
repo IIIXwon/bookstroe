@@ -11,7 +11,7 @@ const {
 
 const Modal = require('./modal.jsx')
 const Cart = require('./cart.jsx')
-// const Checkout = require('./checkout.jsx')
+const Checkout = require('./checkout.jsx')
 const Product = require('./product.jsx')
 
 const PRODUCTS = [
@@ -118,7 +118,7 @@ ReactDOM.render((
         </Route>
         <Route
             path="/checkout"
-            // component={Checkout}
+            component={Checkout}
             cartItems={cartItems}
             products={PRODUCTS}/>
     </Router>
