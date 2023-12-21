@@ -1,10 +1,8 @@
 module.exports = {
     entry: "./jsx/app.jsx",
     output: {
-        path:  '/Users/hypeboy/Desktop/practices/BookStore/BookStore/src/main/resources/static/build',
-        sourceMapFilename: "bundle.js.map",
-        filename: "bundle.js",
-        devtoolLineToLine: true,
+        path:  __dirname + '/build',
+        filename: "bundle.js"
     },
     devtool: 'source-map',
     devServer: {

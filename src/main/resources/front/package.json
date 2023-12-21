@@ -21,6 +21,7 @@
       "node_modules/**/*.js"
     ]
   },
+  "proxy" : "http://localhost:8080",
   "devDependencies": {
     "babel-core": "6.3.21",
     "babel-loader": "6.4.1",
