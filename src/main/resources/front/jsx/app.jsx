@@ -10,7 +10,7 @@ const {
 } = require('react-router')
 
 // const Modal = require('./modal.jsx')
-// const Cart = require('./cart.jsx')
+const Cart = require('./cart.jsx')
 // const Checkout = require('./checkout.jsx')
 // const Product = require('./product.jsx')
 
@@ -112,7 +112,7 @@ ReactDOM.render((
                 products={PRODUCTS}/>
             <Route
                 path="/cart"
-                // component={Cart}
+                component={Cart}
                 cartItems={cartItems}
                 products={PRODUCTS}/>
         </Route>
