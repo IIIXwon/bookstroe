@@ -1,5 +1,5 @@
 const React = require('react')
-const {Link} = require('react-dom')
+const {Link} = require('react-router')
 
 class Cart extends React.Component {
     render() {
@@ -11,8 +11,7 @@ class Cart extends React.Component {
                     {Object.keys(this.props.route.cartItems).map((item, index, list) => {
                         return (
                             <li key={item}>
-                                {this.props.route.products[item].title}
-                                - {this.props.route.cartItems[item]}
+                                {this.props.route.products[item].title} - {this.props.route.cartItems[item]}
                             </li>
                         )
                     })}
@@ -23,3 +22,5 @@ class Cart extends React.Component {
         )
     }
 }
+
+module.exports = Cart

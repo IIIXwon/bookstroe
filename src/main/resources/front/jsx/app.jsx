@@ -12,7 +12,7 @@ const {
 const Modal = require('./modal.jsx')
 const Cart = require('./cart.jsx')
 // const Checkout = require('./checkout.jsx')
-// const Product = require('./product.jsx')
+const Product = require('./product.jsx')
 
 const PRODUCTS = [
     {id: 0, src: 'images/proexpress-cover.jpg', title: 'Pro Express.js', url: 'http://amzn.to/1D6qiqk'},
@@ -107,7 +107,7 @@ ReactDOM.render((
             <IndexRoute component={Index}/>
             <Route
                 path="/products/:id"
-                // component={Product}
+                component={Product}
                 addToCart={addToCart}
                 products={PRODUCTS}/>
             <Route

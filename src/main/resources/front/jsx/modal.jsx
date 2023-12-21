@@ -13,7 +13,7 @@ class Modal extends React.Component{
             width: 450,
             height: 400,
             padding: 20,
-            bowShadow: '0px 0px 150px 130px rgba(0,0,0,0.5)',
+            boxShadow: '0px 0px 150px 130px rgba(0, 0, 0, 0.5)',
             overflow: 'auto',
             background: '#fff'
         }
