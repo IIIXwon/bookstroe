@@ -18,4 +18,4 @@ out/
 node_modules/
 images/
 *.map
-front/build/
+src/main/resources/front/build/
